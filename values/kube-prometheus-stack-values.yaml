@@ -217,7 +217,7 @@ alertmanager:
     # [HAO]: Add slack receiver
     - name: 'slack-receiver'
       slack_configs:
-        - api_url: "https://hooks.slack.com/services/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"
+        - api_url: "https://hooks.slack.com/services/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"
           channel: "#dev"
           title: "Prometheus Alert: {{ .CommonAnnotations.env }}: {{ .CommonAnnotations.summary }}"
           text: "{{ range .Alerts }}{{ .Annotations.message }}\n{{ end }}"
